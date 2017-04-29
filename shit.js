@@ -5071,16 +5071,30 @@ function update(order){
   $("#description").text(temp.description);
   $("#name").text(temp.character);
   if (order==1){
-    var choice = [temp.a.label,temp.a.values.valuation,temp.a]
+    var choice = [temp.choices.a.label,temp.choices.a.values.valuation,temp.choices.a.values.happiness,temp.choices.a.values.time];
+    $("a").text(choice[0]);
   }
-  $("money").text();
-  $("environment").text();
-  $("time").text();
+  else if(order==2){
+    var choice = [temp.choices.b.label,temp.choices.b.values.valuation,temp.choices.b.values.happiness,temp.choices.b.values.time];
+    $("b").text(choice[0]);
+  }
+  money = Number(choice[1])+Number($("#money").text());
+  environment = Number(choice[2])+Number($("#environment").text());
+  time = Number($("#time").text())-Number(choice[3]);
+  $("#money").text(money);
+  $("#environment").text(environment);
+  $("#time").text(time);
 }
 
 $(document).ready(function(){
     $("#a").click(function(){
         update(1);
+    });
+});
+
+$(document).ready(function(){
+    $("#b").click(function(){
+        update(2);
     });
 });
 
