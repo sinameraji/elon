@@ -233,7 +233,7 @@ cards = [
     "label": "There is still a lot of untapped potential in wind and tidal energy.",
     "values": {
      "money": -50,
-     "environment": 15,
+     "environment": 10,
      "time": -3,
     }
    }
@@ -386,7 +386,7 @@ cards = [
 {
 "id": 17,
 "description": "Got a lot of used tires",
-"character": "office-manager",
+"character": "Office-Manager",
 "conditions": "",
 "choices": {
 "a": {
@@ -441,7 +441,7 @@ cards = [
 "a": {
 "label": "Feed him to your Pet Alligator",
 "values": {
-"money": 1,
+"money": 10,
 "environment": 2,
 "time": 0,
 }
@@ -449,7 +449,7 @@ cards = [
 "b": {
 "label": "Dissolve on Acid",
 "values": {
-"money": 2,
+"money": -10,
 "environment": -2,
 "time": 0,
 }
@@ -474,7 +474,7 @@ cards = [
     "label": "We need to treat it as a temporary filler for the gaps in our green energy consumption",
     "values": {
      "money": -50,
-     "environment": 15,
+     "environment": 10,
      "time": 0,
     }
    }
@@ -555,7 +555,7 @@ cards = [
 {
     "id": 24,
     "description": "I need some autonomous vehicles for mining purposes, would you care to develop one for me?",
-    "character": "Coral / ExxonBubble / PB",
+    "character": "Coral",
     "conditions": "",
     "choices": {
       "a": {
@@ -725,9 +725,11 @@ cards = [
 
 var choice;
 var temp;
+var arr = [];
 
 function initialize(order){
-  x = Math.floor((Math.random() * 28));
+  x = 0;
+  arr.push(x);
   temp = cards[x];
   $("#description").text(temp.description);
   $("#name").text(temp.character);
@@ -744,9 +746,10 @@ function initialize(order){
 }
 
 function update(order){
-  $("#description").animate({opacity: 'toggle'});
-  $("#description").text(temp.description);
-  $("#description").animate({opacity: 'toggle'});
+  $("#description").fadeOut(function() {
+  $(this).text(temp.description).fadeIn(500);
+  });
+  //$("#description").text(temp.description);
   $("#name").text(temp.character);
   if (order==1){
     var choice = [temp.choices.a.label,temp.choices.a.values.money,temp.choices.a.values.environment,temp.choices.a.values.time];
@@ -774,6 +777,10 @@ $(document).ready(function(){
     $("#a").click(function(){
         update(1);
         x = Math.floor((Math.random() * 28));
+        while($.inArray(x, arr) > -1){
+          x = Math.floor((Math.random() * 28));
+        }
+        arr.push(x);
         temp = cards[x];
     });
 });
@@ -781,7 +788,10 @@ $(document).ready(function(){
 $(document).ready(function(){
     $("#b").click(function(){
         update(2);
-        x = Math.floor((Math.random() * 28));
+        while($.inArray(x, arr) > -1){
+          x = Math.floor((Math.random() * 28));
+        }
+        arr.push(x);
         temp = cards[x];
     });
 });
