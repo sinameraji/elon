@@ -5,6 +5,10 @@ ul {
 
 li  {
     display:inline-block;
-    padding-right: 40px
+    padding-right: 40px;
 }
+
+#card {
+    position: absolute;
+    top: 30%;
 }
