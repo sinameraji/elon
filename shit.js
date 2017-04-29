@@ -5065,10 +5065,22 @@ cards = [
   }
 ]
 
-$(document).ready(function(){
+function update(order){
   var x = Math.floor((Math.random() * 100) + 1);
   var temp = cards[x]
   $("#description").text(temp.description);
   $("#name").text(temp.character);
+  if (order==1){
+    var choice = [temp.a.label,temp.a.values.valuation,temp.a]
+  }
+  $("money").text();
+  $("environment").text();
+  $("time").text();
+}
+
+$(document).ready(function(){
+    $("#a").click(function(){
+        update(1);
+    });
 });
 
