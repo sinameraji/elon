@@ -4,7 +4,8 @@ body {
 
 #card {
     position: absolute;
-    top: 30%;
+    top: 20%;
+    
 }
 
 #question {
@@ -16,7 +17,10 @@ body {
 }
 
 #butt {
-    padding-bottom: 15px;
+    margin: 0 10px 15px 10px;
+    padding-bottom: 10px;
+    word-wrap: break-word;
+    white-space:normal !important;
 }
 
 #avatar {
