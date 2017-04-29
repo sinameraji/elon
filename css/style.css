@@ -21,9 +21,19 @@ h5 {
 #status {
 }
 
-#card {
+#card{
     position: absolute;
     top: 20%;
+}
+
+#card-body {
+    padding-top: 10px;
+    
+    position: absolute;
+    top: 20%;
+    border-style: solid;
+    border-width: thick;
+    border-color:darkgrey;
 }
 
 #question {
@@ -88,4 +98,5 @@ h5 {
 	position:relative;
 	top:1px;
 }
+
 
