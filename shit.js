@@ -290,7 +290,7 @@ cards = [
 {
 "id": 13,
 "description": "Rumors said Donald Trump wants to build more buildings by destroying more trees",
-"character": "John my Partner in Crime",
+"character": "John, My Partner in Crime",
 "conditions": "",
 "choices": {
 "a": {
@@ -314,7 +314,7 @@ cards = [
 {
 "id": 14,
 "description": "National Zoo reported that there is one tiger left in the US",
-"character": "Anna The National Zoo Reporter",
+"character": "Anna, The National Zoo Reporter",
 "conditions": "",
 "choices": {
 "a": {
@@ -338,7 +338,7 @@ cards = [
 {
 "id": 15,
 "description": "A music band needs sponsor for their music video",
-"character": "Tom the Guitarist",
+"character": "Tom, The Guitarist",
 "conditions": "",
 "choices": {
 "a": {
@@ -362,7 +362,7 @@ cards = [
 {
 "id": 16,
 "description": "Fund raiser comes to you to save trees",
-"character": "Johnny the Principal",
+"character": "Johnny, The Principal",
 "conditions": "",
 "choices": {
 "a": {
@@ -410,7 +410,7 @@ cards = [
 {
 "id": 18,
 "description": "A staff got severely injured in a factory",
-"character": "Tommy the worker",
+"character": "Tommy, The Worker",
 "conditions": "",
 "choices": {
 "a": {
@@ -435,7 +435,7 @@ cards = [
 {
 "id": 19,
 "description": "What do we do with the body?",
-"character": "Tommy the worker",
+"character": "Tommy, The Worker",
 "conditions": "",
 "choices": {
 "a": {
@@ -699,7 +699,7 @@ cards = [
 {
     "id": 30,
     "description": "Honey, shall we have another baby?",
-    "character": "Dearest wife",
+    "character": "Dearest Wife",
     "conditions": "",
     "choices": {
       "a": {
@@ -734,36 +734,40 @@ function initialize(order){
   $("#description").text(temp.description);
   $("#name").text(temp.character);
   if (order==1){
-    var choice = [temp.choices.a.label,temp.choices.a.values.money,temp.choices.a.values.environment,temp.choices.a.values.time];
+      choice = [temp.choices.a.label,temp.choices.a.values.money,temp.choices.a.values.environment,temp.choices.a.values.time];
     $("#a").text(choice[0]);
     $("#b").text(temp.choices.b.label);
   }
   else if(order==2){
-    var choice = [temp.choices.b.label,temp.choices.b.values.money,temp.choices.b.values.environment,temp.choices.b.values.time];
+      choice = [temp.choices.b.label,temp.choices.b.values.money,temp.choices.b.values.environment,temp.choices.b.values.time];
     $("#b").text(choice[0]);
     $("#a").text(temp.choices.a.label);
   }
 }
 
 function update(order){
-  $("#description").fadeOut(function() {
-  $(this).text(temp.description).fadeIn(500);
+  money = Number(choice[1])+Number($("#money").text());
+  environment = Number(choice[2])+Number($("#environment").text());
+  time = Number($("#time").text())+Number(choice[3]);
+  $("#description").fadeOut("fast",function() {
+  $(this).text(temp.description).fadeIn("fast");
   });
   //$("#description").text(temp.description);
+  var avatar = "img/avatar/"+temp.character+".png";
+  $("#avatar2").fadeOut("fast",function() {
+  $("#avatar2").attr("src", avatar).fadeIn("fast");
+  });
   $("#name").text(temp.character);
   if (order==1){
-    var choice = [temp.choices.a.label,temp.choices.a.values.money,temp.choices.a.values.environment,temp.choices.a.values.time];
+    choice = [temp.choices.a.label,temp.choices.a.values.money,temp.choices.a.values.environment,temp.choices.a.values.time];
     $("#a").text(choice[0]);
     $("#b").text(temp.choices.b.label);
   }
   else if(order==2){
-    var choice = [temp.choices.b.label,temp.choices.b.values.money,temp.choices.b.values.environment,temp.choices.b.values.time];
+    choice = [temp.choices.b.label,temp.choices.b.values.money,temp.choices.b.values.environment,temp.choices.b.values.time];
     $("#b").text(choice[0]);
     $("#a").text(temp.choices.a.label);
   }
-  money = Number(choice[1])+Number($("#money").text());
-  environment = Number(choice[2])+Number($("#environment").text());
-  time = Number($("#time").text())+Number(choice[3]);
   $("#money").text(money);
   $("#environment").text(environment);
   $("#time").text(time);
@@ -775,24 +779,24 @@ $(document).ready(function(){
 
 $(document).ready(function(){
     $("#a").click(function(){
-        update(1);
         x = Math.floor((Math.random() * 28));
         while($.inArray(x, arr) > -1){
           x = Math.floor((Math.random() * 28));
         }
         arr.push(x);
         temp = cards[x];
+        update(1);
     });
 });
 
 $(document).ready(function(){
     $("#b").click(function(){
-        update(2);
         while($.inArray(x, arr) > -1){
           x = Math.floor((Math.random() * 28));
         }
         arr.push(x);
         temp = cards[x];
+        update(2);
     });
 });
 

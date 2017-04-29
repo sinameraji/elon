@@ -1,7 +1,7 @@
 body {
     font-family: 'Press Start 2P', cursive;
-    background-image: url("/img/bg.png");
     background-color: black;
+    background-image: url("img/background.png");
 }
 
 h1 {
@@ -16,6 +16,10 @@ h4 {
 h5 {
     font-size: 12px;
     line-height:150%;
+}
+
+#wrapper{
+	height: 300px;
 }
 
 #status {
