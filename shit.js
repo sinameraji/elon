@@ -14,7 +14,7 @@ cards = [
     }
    },
    "b": {
-    "label": "Yeah... I'm still settling in with all this new responsibilty...",
+    "label": "I'm still settling in with this new responsibilty",
     "values": {
      "money": 0,
      "environment": 0,
@@ -134,7 +134,7 @@ cards = [
     }
    },
    "b": {
-    "label": "And it's our secret until we've sold all the lithium we can.",
+    "label": "it's our secret until we've sold all the lithium we can.",
     "values": {
      "money": 50,
      "environment": -10,
@@ -182,7 +182,7 @@ cards = [
     }
    },
    "b": {
-    "label": "Gradually releasing green house gases into the atmosphere should warm it up over a few centuries.",
+    "label": "Release green house gas into it, it'll get warm",
     "values": {
      "money": -30,
      "environment": 0,
@@ -471,7 +471,7 @@ cards = [
     } //condition for question 8
    },
    "b": {
-    "label": "We need to treat it as a temporary filler for the gaps in our green energy consumption",
+    "label": "Treat it as a temporary filler for the gaps in our green energy consumption",
     "values": {
      "money": -50,
      "environment": 10,
