@@ -1,32 +1,17 @@
-nav {
-    text-align: justify;
-    width: 100%;
-}
 
-nav ul {
-    margin: 0;
-    
-}
-
-nav li  {
-    display:inline-block;
-    
-    padding-right: 30px;
-    list-style-type:none;
-    vertical-align:middle;
-}
 
 #card {
     position: absolute;
     top: 30%;
 }
 
+#question {
+    padding-bottom: 50px; 
+}
 
-
-#name {
+#name, #description {
     padding-left: 10px;
 }
 
-#description {
-    padding-left: 10px;
-}
+
+
