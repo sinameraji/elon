@@ -9,11 +9,13 @@ body {
 }
 
 #question {
-    padding-bottom: 50px; 
+    padding-bottom: 30px; 
 }
 
 #name, #description {
     padding-left: 10px;
+    text-overflow: ellipsis;
+    height: 40px;
 }
 
 #butt {
@@ -21,6 +23,7 @@ body {
     padding-bottom: 10px;
     word-wrap: break-word;
     white-space:normal !important;
+
 }
 
 #avatar {

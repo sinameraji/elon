@@ -182,7 +182,7 @@ cards = [
     }
    },
    "b": {
-    "label": "Releasing green house gas into atmosphere should warm it up over a few centuries.",
+    "label": "Release green house gas into it, it'll get warm",
     "values": {
      "money": -30,
      "environment": 0,
