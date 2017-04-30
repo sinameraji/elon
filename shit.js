@@ -270,7 +270,7 @@ cards = [
 "conditions": "",
 "choices": {
 "a": {
-"label": "Let/'s Party",
+"label": "Let's Party",
 "values": {
 "money": 40,
 "environment": -5,
@@ -278,7 +278,7 @@ cards = [
 }
 },
 "b": {
-"label": "/'cry/'s in the corner/'",
+"label": "'cry's in the corner'",
 "values": {
 "money": 0,
 "environment": 5,
