@@ -9,14 +9,14 @@ cards = [
     "label": "We gonna party so hard we won't remember a thing!",
     "values": {
      "money": -5,
-     "environment": -1,
+     "environment": -5,
      "time": -1,
     }
    },
    "b": {
     "label": "I'm still settling in with this new responsibilty",
     "values": {
-     "money": 0,
+     "money": 5,
      "environment": 0,
      "time": -1,
     }
@@ -30,10 +30,10 @@ cards = [
   "conditions": "",
   "choices": {
    "a": {
-    "label": "What would it cost for you to promise you'll save them?",
+    "label": "Is $10M too much?",
     "values": {
      "money": -10,
-     "environment": 0,
+     "environment": 5,
      "time": 0,
     }
    },
@@ -41,7 +41,7 @@ cards = [
     "label": "Have you ever tried whale meat?",
     "values": {
      "money": 0,
-     "environment": -2,
+     "environment": -5,
      "time": 0,
     }
    }
@@ -56,17 +56,17 @@ cards = [
    "a": {
     "label": "Build a penguin conservatorium.",
     "values": {
-     "money": -20,
-     "environment": 2,
-     "time": -2,
+     "money": -30,
+     "environment": 5,
+     "time": -3,
     }
    },
    "b": {
     "label": "Start 'Penguin Flinging' as an official olympic sport.",
     "values": {
-     "money": 20,
+     "money": 30,
      "environment": -10,
-     "time": -3,
+     "time": -2,
     }
    }
   }
@@ -81,7 +81,7 @@ cards = [
     "label": "All my company cafeterias will sell only Organic.",
     "values": {
      "money": -10,
-     "environment": -2,
+     "environment": -5,
      "time": -1,
     }
    },
@@ -89,7 +89,7 @@ cards = [
     "label": "Whatever... food is food.",
     "values": {
      "money": 0,
-     "environment": 10,
+     "environment": 5,
      "time": -1,
     }
    }
@@ -104,15 +104,15 @@ cards = [
    "a": {
     "label": "Increase prices to manage mining rates.",
     "values": {
-     "money": 10,
-     "environment": 3,
-     "time": -2,
+     "money": 20,
+     "environment": 0,
+     "time": -1,
     }
    },
    "b": {
     "label": "Drill that sh#% and lets make some mow-nay!",
     "values": {
-     "money": 30,
+     "money": 40,
      "environment": -10,
      "time": -2,
     }
@@ -134,11 +134,11 @@ cards = [
     }
    },
    "b": {
-    "label": "it's our secret until we've sold all the lithium we can.",
+    "label": "It's OUR secret until we've sold all the lithium we can.",
     "values": {
      "money": 50,
      "environment": -10,
-     "time": -2,
+     "time": -3,
     }
    }
   }
@@ -152,8 +152,8 @@ cards = [
    "a": {
     "label": "Launch 'Skynet' brand condoms.",
     "values": {
-     "money": 10,
-     "environment": 0,
+     "money": 20,
+     "environment": 5,
      "time": -2,
     }
    },
@@ -161,7 +161,7 @@ cards = [
     "label": "Program a 'natural selection' algorithm into Tesla autopilot",
     "values": {
      "money": -20,
-     "environment": 0,
+     "environment": 5,
      "time": -2,
     } //set condition for salman's sue question.
    }
@@ -186,7 +186,7 @@ cards = [
     "values": {
      "money": -30,
      "environment": 0,
-     "time": 2,
+     "time": -3,
     }
    }
   }
@@ -200,17 +200,17 @@ cards = [
    "a": {
     "label": "You mean my product. I just bought your company.",
     "values": {
-     "money": 50,
-     "environment": -10,
-     "time": 1,
+     "money": 30,
+     "environment": -15,
+     "time": -2,
     }
    },
    "b": {
     "label": "Stop pouring your chemicals in the community waterways.",
     "values": {
      "money": 0,
-     "environment": 10,
-     "time": 1,
+     "environment": 0,
+     "time": 0,
     }
    }
   }
@@ -224,9 +224,9 @@ cards = [
    "a": {
     "label": "Nuclear for the motherf#$%ing win!",
     "values": {
-     "money": 0,
-     "environment": -5,
-     "time": -1,
+     "money": 40,
+     "environment": -10,
+     "time": -3,
     } //set condition for question 31
    },
    "b": {
@@ -241,23 +241,23 @@ cards = [
  },
 {
 "id": 11,
-"description": "Pertol company has a great project",
+"description": "Pertolas Oil Co. has a great project",
 "character": "Office-Manager",
 "conditions": "",
 "choices": {
 "a": {
-"label": "What are we waiting for",
+"label": "What are we waiting for!",
 "values": {
 "money": 30,
-"environment": -2,
-"time": 1,
+"environment": -10,
+"time": -3,
 }
 },
 "b": {
 "label": "Ignore",
 "values": {
 "money": 0,
-"environment": 2,
+"environment": -10,
 "time": 0,
 }
 }
@@ -274,30 +274,30 @@ cards = [
 "values": {
 "money": 40,
 "environment": -5,
-"time": -2,
+"time": -3,
 }
 },
 "b": {
-"label": "'cry's in the corner'",
+"label": "'cries in the corner'",
 "values": {
 "money": 0,
-"environment": 5,
-"time": 0,
+"environment": 0,
+"time": -1,
 }
 }
 }
 },
 {
 "id": 13,
-"description": "Rumors said Donald Trump wants to build more buildings by destroying more trees",
+"description": "Heard rumours that Gonold Trunk wants to build more buildings by destroying more trees",
 "character": "John, My Partner in Crime",
 "conditions": "",
 "choices": {
 "a": {
 "label": "Let's Protest",
 "values": {
-"money": -20,
-"environment": 3,
+"money": -5,
+"environment": 10,
 "time": -1,
 }
 },
@@ -305,8 +305,8 @@ cards = [
 "label": "Get the car ready",
 "values": {
 "money": 30,
-"environment": -3,
-"time": -2,
+"environment": -5,
+"time": -3,
 }
 }
 }
@@ -318,19 +318,19 @@ cards = [
 "conditions": "",
 "choices": {
 "a": {
-"label": "I like cars more",
+"label": "Cars are faster than tigers.",
 "values": {
-"money": -10,
-"environment": -1,
+"money": 10,
+"environment": -10,
 "time": 0,
 }
 },
 "b": {
-"label": "X-breading with bengal cats",
+"label": "Initiate X-breading project with bengal cats",
 "values": {
-"money": 10,
-"environment": 1,
-"time": -1,
+"money": -20,
+"environment": 10,
+"time": -3,
 }
 }
 }
@@ -344,13 +344,13 @@ cards = [
 "a": {
 "label": "Let's do it",
 "values": {
-"money": -10,
+"money": -5,
 "environment": 0,
-"time": -1,
+"time": 0,
 }
 },
 "b": {
-"label": "Don't give a fu#$",
+"label": "Don't give a f&%#!",
 "values": {
 "money": 0,
 "environment": 0,
@@ -369,15 +369,15 @@ cards = [
 "label": "Ignore",
 "values": {
 "money": 0,
-"environment": 0,
+"environment": -5,
 "time": 0,
 }
 },
 "b": {
 "label": "Get me my wallet",
 "values": {
-"money": -2,
-"environment": 0,
+"money": -5,
+"environment": 5,
 "time": 0,
 }
 }
@@ -390,19 +390,19 @@ cards = [
 "conditions": "",
 "choices": {
 "a": {
-"label": "Let's make a tesla drift team",
+"label": "Let's make a Test-Lah drift team",
 "values": {
-"money": 40,
-"environment": -2,
+"money": 10,
+"environment": -5,
 "time": -2,
 }
 },
 "b": {
 "label": "Let's reprocess it into car interior fabric",
 "values": {
-"money": 10,
-"environment": 2,
-"time": -1,
+"money": -20,
+"environment": 10,
+"time": -3,
 }
 }
 }
@@ -417,16 +417,16 @@ cards = [
 "label": "Kill him to avoid compensating him", //condition for q19
 "values": {
 "money": 0,
-"environment": 0,
+"environment": 5,
 "time": 0,
 }
 },
 "b": {
 "label": "Visit him in the hospital",
 "values": {
-"money": 30,
+"money": -10,
 "environment": 0,
-"time": -1,
+"time": 0,
 }
 }
 }
@@ -441,16 +441,16 @@ cards = [
 "a": {
 "label": "Feed him to your Pet Alligator",
 "values": {
-"money": 10,
-"environment": 2,
+"money": 5,
+"environment": 5,
 "time": 0,
 }
 },
 "b": {
-"label": "Dissolve on Acid",
+"label": "Dissolve it in Acid",
 "values": {
-"money": -10,
-"environment": -2,
+"money": -5,
+"environment": -5,
 "time": 0,
 }
 }
@@ -467,11 +467,11 @@ cards = [
     "values": {
      "money": -50,
      "environment": 10,
-     "time": 1,
+     "time": -3,
     } //condition for question 8
    },
    "b": {
-    "label": "Treat it as a temporary filler for the gaps in our green energy consumption",
+    "label": "Nuclear energy is only a temporary filler for the gaps in our green energy consumption",
     "values": {
      "money": -50,
      "environment": 10,
@@ -482,15 +482,15 @@ cards = [
  },
 {
     "id": 21,
-    "description": "Customers are suing Tesla because they crashed while engaging AutoPilot, sir.",
+    "description": "Customers are suing Test-Lah because they crashed while engaging AutoPilot, sir.",
     "character": "JB Straubel, CTO",
     "conditions": "",
     "choices": {
       "a": {
-        "label": "Hah, natural selection at its best.",
+        "label": "Hah! Natural selection at its best!",
         "values": {
-          "money": -10,
-          "environment": 0,
+          "money": -20,
+          "environment": 5,
           "time": 0,
         }
       },
@@ -498,31 +498,31 @@ cards = [
         "label": "Call my f*cking lawyers!",
         "values": {
           "money": -20,
-          "environment": 0,
-          "time": -1,
+          "environment": 5,
+          "time": -2,
         }
       }
     }
   },
 {
     "id": 22,
-    "description": "Your Supercharger are slowly burning down, sir.",
+    "description": "Your Test-Lah Soup-R-Chargers are slowly burning down, sir.",
     "character": "Jason Wheeler, CFO",
     "conditions": "",
     "choices": {
       "a": {
-        "label": "Rebuild a new one.",
+        "label": "Rebuild them!",
         "values": {
-          "money": -20,
-          "environment": 1,
-          "time": -1,
+          "money": 10,
+          "environment": 10,
+          "time": -2,
         }
       },
       "b": {
-        "label": "Pass me the popcorns",
+        "label": "Michael Gay action time! Grab the popcorn!",
         "values": {
-          "money": -30,
-          "environment": -2,
+          "money": -20,
+          "environment": -10,
           "time": 0,
         }
       }
@@ -531,11 +531,11 @@ cards = [
 {
     "id": 23,
     "description": "Can you help me build a fully autonomous army?",
-    "character": "Trump, President of USA",
+    "character": "Donald Trump, President of USA",
     "conditions": "",
     "choices": {
       "a": {
-        "label": "Bruhhh!",
+        "label": "You fo' reelz Esse?!",
         "values": {
           "money": 0,
           "environment": 0,
@@ -546,7 +546,7 @@ cards = [
         "label": "Let me get to my drawing board.",
         "values": {
           "money": 30,
-          "environment": 1,
+          "environment": -5,
           "time": -3,
         }
       }
@@ -570,7 +570,7 @@ cards = [
         "label": "Good deal.",
         "values": {
           "money": 30,
-          "environment": -2,
+          "environment": -10,
           "time": -2,
         }
       }
@@ -578,116 +578,20 @@ cards = [
   },
 {
     "id": 25,
-    "description": "We need to build more Gigafactories, sir.",
+    "description": "We need to build more Biga-factories, sir.",
     "character": "JB Straubel, CTO",
     "conditions": "",
     "choices": {
       "a": {
-        "label": "Go ahead, absolutely!",
+        "label": "The f&^# you waiting for? Get to work!",
         "values": {
-          "money": -40,
-          "environment": -1,
+          "money": 10,
+          "environment": -5,
           "time": -3,
         }
       },
       "b": {
         "label": "Costs too much.",
-        "values": {
-          "money": 0,
-          "environment": -2,
-          "time": 0,
-        }
-      }
-    }
-  },
-{
-    "id": 26,
-    "description": "We need to make our solar work",
-    "character": "Tanya, CMO",
-    "conditions": "", //set condition with #27
-    "choices": {
-      "a": {
-        "label": "YEA, let's invest somewhere awesome!",
-        "values": {
-          "money": 0,
-          "environment": 1,
-          "time": -1,
-        }
-      },
-      "b": {
-        "label": "Don't waste my time.",
-        "values": {
-          "money": 0,
-          "environment": -3,
-          "time": 0,
-        }
-      }
-    }
-  },
-{
-    "id": 27,
-    "description": "Small scale or large scale development?",
-    "character": "Tanya, CMO",
-    "conditions": "",
-    "choices": {
-      "a": {
-        "label": "Meh, small scale will do.",
-        "values": {
-          "money": 20,
-          "environment": 1,
-          "time": -2,
-        }
-      },
-      "b": {
-        "label": "GO BIG OR GO HOME!",
-        "values": {
-          "money": 50,
-          "environment": 3,
-          "time": -3,
-        }
-      }
-    }
-  },
-{
-    "id": 28,
-    "description": "Would you like it in a mug or paper cups?",
-    "character": "Jeff, Starbucks Barista",
-    "conditions": "",
-    "choices": {
-      "a": {
-        "label": "Mug please.",
-        "values": {
-          "money": 0,
-          "environment": 1,
-          "time": 0,
-        }
-      },
-      "b": {
-        "label": "Paper cup duh.",
-        "values": {
-          "money": 0,
-          "environment": -1,
-          "time": 0,
-        }
-      }
-    }
-  },
-{
-    "id": 29,
-    "description": "Hey Tesla, we are going to create our own SolarCity. Would you like to join us?",
-    "character": "BYD-EV",
-    "conditions": "",
-    "choices": {
-      "a": {
-        "label": "Any publicity is good publicity",
-        "values": {
-          "money": 30,
-          "environment": 2,
-          "time": -1,
-        }
-      },
-      "b": {
-        "label": "Me no speak engrish",
         "values": {
           "money": 0,
           "environment": 0,
@@ -697,24 +601,120 @@ cards = [
     }
   },
 {
-    "id": 30,
-    "description": "Honey, shall we have another baby?",
-    "character": "Dearest Wife",
+    "id": 26,
+    "description": "We need to expand our solar department.",
+    "character": "Tanya, CMO",
+    "conditions": "", //set condition with #27
+    "choices": {
+      "a": {
+        "label": "The f%&$ you waiting for? Just do it!",
+        "values": {
+          "money": 10,
+          "environment": 5,
+          "time": -2,
+        }
+      },
+      "b": {
+        "label": "Don't waste my time.",
+        "values": {
+          "money": 0,
+          "environment": -5,
+          "time": 0,
+        }
+      }
+    }
+  },
+{
+    "id": 27,
+    "description": "Small scale or large scale development of our new tidal power system?",
+    "character": "Tanya, CMO",
     "conditions": "",
     "choices": {
       "a": {
-        "label": "What about we adopt one, alright?",
+        "label": "Meh, small scale will do.",
         "values": {
-          "money": -20,
-          "environment": 1,
+          "money": -10,
+          "environment": 5,
+          "time": -2,
+        }
+      },
+      "b": {
+        "label": "GO BIG OR GO HOME!",
+        "values": {
+          "money": -30,
+          "environment": 10,
+          "time": -3,
+        }
+      }
+    }
+  },
+{
+    "id": 28,
+    "description": "Would you like it in a mug or paper cups?",
+    "character": "Jeff, StarBugz Barista",
+    "conditions": "",
+    "choices": {
+      "a": {
+        "label": "Mug please.",
+        "values": {
+          "money": -5,
+          "environment": 5,
+          "time": 0,
+        }
+      },
+      "b": {
+        "label": "Paper cup duh.",
+        "values": {
+          "money": -5,
+          "environment": -5,
+          "time": 0,
+        }
+      }
+    }
+  },
+{
+    "id": 29,
+    "description": "Hey Test-Lah, we are going to build a model solar powered island city. Would you like to join us?",
+    "character": "Specific Electric",
+    "conditions": "",
+    "choices": {
+      "a": {
+        "label": "Any publicity is good publicity",
+        "values": {
+          "money": 10,
+          "environment": 5,
+          "time": -3,
+        }
+      },
+      "b": {
+        "label": "Me no speak-uh ing-gur-rish",
+        "values": {
+          "money": 0,
+          "environment": 5,
+          "time": 0,
+        }
+      }
+    }
+  },
+{
+    "id": 30,
+    "description": "Honey, shall we have another baby?",
+    "character": "Dearest Spouse",
+    "conditions": "",
+    "choices": {
+      "a": {
+        "label": "What about we adopt one? Have you looked on E-Buy?",
+        "values": {
+          "money": -50,
+          "environment": 5,
           "time": -1,
         }
       },
       "b": {
         "label": "* smiles * One more for a football team?",
         "values": {
-          "money": -20,
-          "environment": -1,
+          "money": -50,
+          "environment": -5,
           "time": -2,
         }
       }
@@ -728,7 +728,7 @@ var temp;
 var arr = [];
 
 function initialize(order){
-  x = 0;
+  x = 6;
   arr.push(x);
   temp = cards[x];
   $("#description").text(temp.description);
@@ -744,6 +744,7 @@ function initialize(order){
     $("#a").text(temp.choices.a.label);
   }
 }
+
 
 function update(order){
   money = Number(choice[1])+Number($("#money").text());
@@ -775,10 +776,14 @@ function update(order){
 
 $(document).ready(function(){
   initialize(1);
+  //$("#myModal").hide();
 });
 
 $(document).ready(function(){
     $("#a").click(function(){
+        if(arr.length > 26){
+          arr = [];
+        }
         x = Math.floor((Math.random() * 28));
         while($.inArray(x, arr) > -1){
           x = Math.floor((Math.random() * 28));
@@ -786,17 +791,34 @@ $(document).ready(function(){
         arr.push(x);
         temp = cards[x];
         update(1);
+        if(Number($("#time").text())<=0 || Number($("#environment").text()) <=0 || Number($("#money").text()) <=0){
+          //window.close();
+          //location.reload();
+          $("#money2").text($("#money").text());
+          $("#environment2").text($("#environment").text());
+          $(document).ready(function(){$("#myModal2").modal('show');});
+        }
     });
 });
 
 $(document).ready(function(){
     $("#b").click(function(){
+        if(arr.length > 26){
+          arr = [];
+        }
+        x = Math.floor((Math.random() * 28));
         while($.inArray(x, arr) > -1){
           x = Math.floor((Math.random() * 28));
         }
         arr.push(x);
         temp = cards[x];
         update(2);
+        if(Number($("#time").text())<=0 || Number($("#environment").text()) <=0 || Number($("#money").text()) <=0){
+          //window.close();
+          //location.reload();
+          $("#money2").text($("#money").text());
+          $("#environment2").text($("#environment").text());
+          $(document).ready(function(){$("#myModal2").modal('show');});
+        }
     });
 });
-

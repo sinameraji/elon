@@ -1,18 +1,65 @@
 <!DOCTYPE html>
 <head>
-	<title>Elon</title>
+    <title>Elon</title>
     <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/bootstrap-theme.min.css">
     <link rel="stylesheet" href="css/style.css">
     <link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet">
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-	<script type="text/javascript" src="shit.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script type="text/javascript" src="shit.js"></script>
+    <script type="text/javascript">$(document).ready(function(){$("#myModal").modal('show');});</script>
 </head>
 
 <body>
+
+<div id="myModal" class="modal fade">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                <h4 style="text-align:center" class="modal-title">BREAKING NEWS!!</h4><br>
+                <p style="text-align:center"><img src="img/alien.jpg" height="140px"/></p>
+                <h4 style="padding-left: 10%;"><strong>Ailion Bust has returned to Mars!</strong></h4>
+                <h6 style="padding-left: 10%">YOU'VE BEEN CHOSEN TO TAKE OVER HIS WORK AND WEALTH! </h6>
+
+            </div>
+            <div class="modal-body">
+                <form class="text-center">
+                    <button type="submit" class="redButton" data-dismiss="modal">LET'S DO IT!</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+    
+    <div id="myModal2" class="modal fade">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                <h2 style="text-align:center" class="modal-title">The End!</h2><br>
+                <p style="text-align:center"><img src="img/earthh.jpg" height="140px"/></p>
+                <h3 style="padding-left: 10%;"><strong>Results:</strong></h3>
+                <h6 style="padding-left: 10%">This is how the company and the planet is doing. </h6><br>
+                
+                <div class="row text-center" id="status">
+                <div class="col-md-6"><span><img src="img/money_icon.png" height="60px"></span><span><p></p><p id="money2">500</p></span></div>
+                <div class="col-md-6"><span><img src="img/green_tree.png" height="60px"></span><span><p></p><p id="environment2">100</p></span></div>
+                
+            </div>
+            </div>
+            <div class="modal-body">
+                <form class="text-center">
+                    <button type="submit" class="redButton" data-dismiss="modal" onclick="location.reload()">Try Again</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
 <audio autoplay loop>
   <source src="soundfx/bg.mp3" type="audio/mpeg">
-	Your browser does not support the audio element.
+    Your browser does not support the audio element.
 </audio>
 <div class="row"><h1 class="text-center">ELON BUST</h1></div>
     
@@ -21,13 +68,13 @@
     <div class="col-sm-4 col-sm-offset-4" id="card">
         <div class="panel panel-default center panel-height" id="card-body">
             <div class="row text-center" id="status">
-                <div class="col-md-4"><span><img src="img/money_icon.png" height="30px"></span><span><p id="money">500</p></span></div>
-                <div class="col-md-4"><span><img src="img/green_tree.png" height="30px"></span><span><p id="environment">100</p></span></div>
-                <div class="col-md-4"><span><img src="img/time_icon.png" height="30px"></span><span><p id="time">40</p></span></div>
+                <div class="col-md-4"><span><img src="img/money_icon.png" height="30px"></span><span><p id="money">100</p></span></div>
+                <div class="col-md-4"><span><img src="img/green_tree.png" height="30px"></span><span><p id="environment">40</p></span></div>
+                <div class="col-md-4"><span><img src="img/time_icon.png" height="30px"></span><span><p id="time">30</p></span></div>
             </div>
             
            <div class="row text-center" id="avatar">
-                <img src="img/card.png" alt="alt" height="140px" width="140 " class="img-rounded" id="avatar2">
+                <img src="img/NASA.png" alt="alt" height="140px" width="140 " class="img-rounded" id="avatar2">
             </div>
             
             <div class="panel " id="question">
@@ -50,7 +97,7 @@
     
    
 
-	
+    
 
 <script src="js/bootstrap.min.js"></script>
 </body>
